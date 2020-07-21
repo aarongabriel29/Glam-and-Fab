@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    color: darkslategray;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.btn-round{
+    background-color: rgb(209, 198, 44);
+    padding: 5px 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px  rgba(92, 90, 90,80);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width:100%;
+}
+
+/* HEADER */
+
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background:url(./images/header-background.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center ;
+    /* background-attachment: fixed; */
+   
+
+
+}
+
+.main-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color:darkslategray;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.header-top{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+
+
+}
+.header-top .logo{
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%,-50%);
+   
+}
+
+.header-top a{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%,-50%);
+
+}
+
+.header-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    z-index: 2;
+    margin-top: 10px;
+  
+   
+    
+}
+
+.header-content h1{
+
+    padding:100px 0px 0px 90px;
+    margin: 0 ;
+    font-size: 60px;
+    color: rgb(233, 21, 102);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    line-height: 100px; 
+    flex: 1;
+ 
+  
+   
+}
+
+.header-content p{
+   
+    padding:30px 0px 0px 90px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    line-height: 50px; 
+    margin: 0;
+    flex: 1;
+  
+
+   
+}
+
+.header-content a{
+
+      
+     font-size: 30px;
+     padding:20px 0px 20px 30px;
+     background: #ec008c; 
+     background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
+     background: linear-gradient(to right, #fc6767, #ec008c);
+     border-radius: 20px;
+     flex: 1;
+     width: 260px;
+     margin: 40px 0px 0px 90px;
+   
+  
+    
+
+}
